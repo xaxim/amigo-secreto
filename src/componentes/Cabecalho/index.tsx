@@ -1,4 +1,3 @@
-// src/componentes/Cabecalho/index.tsx
 import './estilos.css'
 
 const Cabecalho = () => {
