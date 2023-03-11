@@ -38,7 +38,7 @@ describe('na pagina de sorteio', () => {
         </RecoilRoot>)
 
         const opcoes = screen.queryAllByRole('option')
-        expect(opcoes).toHaveLength(participantes.length)
+        expect(opcoes).toHaveLength(participantes.length + 1)
     })
     test('o amigo secreto é exibido quando solicitado', () => {
         render(<RecoilRoot>
@@ -46,7 +46,7 @@ describe('na pagina de sorteio', () => {
         </RecoilRoot>)
 
         const select = screen.getByPlaceholderText('Selecione o seu nome')
-        
+
         fireEvent.change(select, {
             target: {
                 value: participantes[0]
